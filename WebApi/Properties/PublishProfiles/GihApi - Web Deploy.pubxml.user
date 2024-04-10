@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAps+ptrU920qYcD7g5b5xoQAAAAACAAAAAAADZgAAwAAAABAAAABinizeAeZEBijCVBHGUFAsAAAAAASAAACgAAAAEAAAAAIpLdWtMvhp+4ypnd7yXgaAAAAAlkA0n0lGB8LQ0yfrX2xOWh+B3e7MuwetI8Ae1Y34XsZTguHyHwGdeK28XVKeq3Vscnje9W2wYh8kKWOSiR+IZDcrcqNE5duabUSctLsYQGDecMxjjVCFQ9Pmyn+TQJy49uzhOIdZ/B4LaZgatQaXdfDLWgujKwDWCXlHwFCKTp4UAAAAqXq5PFlPE0PJXwYE1AMCgxEYBnc=</EncryptedPassword>
+    <History>False|2024-04-08T19:24:18.9565475Z;False|2024-04-08T20:47:58.6125240+03:00;False|2024-04-08T20:44:31.8246290+03:00;False|2024-04-08T20:39:51.3409177+03:00;False|2024-04-08T20:34:16.1778245+03:00;False|2024-04-08T20:29:47.5472752+03:00;False|2024-04-08T20:28:28.0846202+03:00;False|2024-04-08T20:25:09.6475308+03:00;False|2024-04-08T20:20:38.8514261+03:00;False|2024-04-08T20:19:17.6780573+03:00;False|2024-04-08T20:13:19.3049479+03:00;False|2024-04-08T20:08:22.3303935+03:00;False|2024-04-08T20:07:39.4699320+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="Repositories.ApplicationDbContext">
+      <Value>Data Source=tcp:gihapidatabaseserver.database.windows.net,1433%3bInitial Catalog=WebApi_db%3bUser Id=gihadmin%40gihapidatabaseserver%3bPassword=Gih1234.%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

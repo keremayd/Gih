@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-04-08T12:11:21.350019Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "13f1a83c-6645-4f9b-8dde-9154acf0a7aa"
+    },
+    "GihApi.resourceName": {
+      "Name": "GihApi.resourceName",
+      "Type": null,
+      "Value": "GihApi"
+    },
+    "GihApi.subscriptionId": {
+      "Name": "GihApi.subscriptionId",
+      "Type": "subscription",
+      "Value": "13f1a83c-6645-4f9b-8dde-9154acf0a7aa"
+    },
+    "mssql1.resourceGroupLocation": {
+      "Name": "mssql1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "eastus"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "rgGihApi"
+    },
+    "GihApi.resourceGroupName": {
+      "Name": "GihApi.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "rgGihApi"
+    },
+    "GihApi.resourceGroupLocation": {
+      "Name": "GihApi.resourceGroupLocation",
+      "Type": null,
+      "Value": "eastus"
+    }
+  }
+}

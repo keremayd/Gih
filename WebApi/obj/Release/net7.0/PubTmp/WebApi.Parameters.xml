@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="GihApi" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Gih\\WebApi\\obj\\Release\\net7\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="Repositories.ApplicationDbContext" description="" value="Data Source=tcp:gihapidatabaseserver.database.windows.net,1433;Initial Catalog=WebApi_db;User Id=gihadmin@gihapidatabaseserver;Password=Gih1234.;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Gih\\WebApi\\obj\\Release\\net7\.0\\PubTmp\\EFSQLScripts\\Repositories\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>
