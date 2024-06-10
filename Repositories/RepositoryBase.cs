@@ -17,6 +17,11 @@ public class RepositoryBase<T>: IRepositoryBase<T> where T: class
     {
         return  _context.Set<T>();
     }
+    
+    public IQueryable<T> FindAllSortByScore()
+    {
+       return _context.Set<T>().OrderByDescending(x => EF.Property<int>(x, "Score"));
+    }
 
     public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression)
     {

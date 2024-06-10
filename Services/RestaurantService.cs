@@ -23,6 +23,11 @@ public class RestaurantService : IRestaurantService
        return await _repositoryManager.Restaurant.GetRestaurant();
     }
 
+    public async Task<IEnumerable<Restaurant>> GetRestaurantSortByScore()
+    {
+        return await _repositoryManager.Restaurant.GetRestaurantSortByScore();
+    }
+    
     public async Task<Restaurant?> GetRestaurantById(int id)
     {
         var entity = await _repositoryManager.Restaurant.GetRestaurantByIdAsync(id);
@@ -76,6 +81,19 @@ public class RestaurantService : IRestaurantService
         return entity;
     }
 
+    public async Task UpdateScoreByIdAsync(int id)
+    {
+        var entity = await _repositoryManager.Restaurant.GetRestaurantByIdAsync(id);
+        if (entity is null)
+        {
+            throw new RestaurantNotFoundException(id);
+        }
+        entity.Score = entity.Score + 1;
+
+        _repositoryManager.Restaurant.UpdateRestaurant(entity);
+        await _repositoryManager.SaveAsync();
+    }
+    
     public async Task UpdateRestaurantByIdAsync(int id, RestaurantDtoForUpdate restaurantDto)
     {
         var entity = await _repositoryManager.Restaurant.GetRestaurantByIdAsync(id);

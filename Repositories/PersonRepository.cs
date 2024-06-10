@@ -13,6 +13,11 @@ public class PersonRepository:RepositoryBase<Person>,IPersonRepository
     {
         return FindAll();
     }
+    
+    public IQueryable<Person> GetPersonSortByScore()
+    {
+        return FindAllSortByScore();
+    }
     public async Task<Person?> GetPersonByIdAsync(int id)
     {
         return await FindByCondition(b => b.PersonId.Equals(id)).SingleOrDefaultAsync();

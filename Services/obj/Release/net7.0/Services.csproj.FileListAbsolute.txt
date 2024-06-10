@@ -32,3 +32,4 @@ C:\Gih\Services\obj\Release\net7.0\Services.dll
 C:\Gih\Services\obj\Release\net7.0\refint\Services.dll
 C:\Gih\Services\obj\Release\net7.0\Services.pdb
 C:\Gih\Services\obj\Release\net7.0\ref\Services.dll
+C:\Gih\Services\obj\Release\net7.0\Services.sourcelink.json

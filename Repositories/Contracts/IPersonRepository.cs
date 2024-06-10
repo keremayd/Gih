@@ -5,6 +5,7 @@ namespace Repositories.Contracts;
 public interface IPersonRepository
 {
     IQueryable<Person> GetPerson();
+    IQueryable<Person> GetPersonSortByScore();
     Task<Person?> GetPersonByIdAsync(int id);
     Task<Person?> GetPersonByEmailAsync(string email);
     Task<Person?> GetPersonByUsernameAsync(string username);

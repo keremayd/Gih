@@ -32,3 +32,4 @@ C:\Gih\Repositories\obj\Debug\net7.0\refint\Repositories.dll
 C:\Gih\Repositories\obj\Debug\net7.0\Repositories.pdb
 C:\Gih\Repositories\obj\Debug\net7.0\Repositories.genruntimeconfig.cache
 C:\Gih\Repositories\obj\Debug\net7.0\ref\Repositories.dll
+C:\Gih\Repositories\obj\Debug\net7.0\Repositories.sourcelink.json

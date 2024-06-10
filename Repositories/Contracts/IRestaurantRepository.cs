@@ -5,6 +5,7 @@ namespace Repositories.Contracts;
 public interface IRestaurantRepository
 {
     Task<IEnumerable<Restaurant>> GetRestaurant();
+    Task<IEnumerable<Restaurant>> GetRestaurantSortByScore();
     Task<Restaurant?> GetRestaurantByIdAsync(int id);
     Task<Restaurant?> GetRestaurantByEmail(string email);
     Task<Restaurant?> GetRestaurantByAddress(string address);

@@ -15,6 +15,11 @@ public class RestaurantRepository : RepositoryBase<Restaurant>, IRestaurantRepos
         return await FindAll().ToListAsync();
     }
     
+    public async Task<IEnumerable<Restaurant>> GetRestaurantSortByScore()
+    {
+        return await FindAllSortByScore().ToListAsync();
+    }
+    
     public async Task<Restaurant?> GetRestaurantByIdAsync(int id)
     {
         return await FindByCondition(b => b.restaurantId == id).SingleOrDefaultAsync(b => b.restaurantId == id);

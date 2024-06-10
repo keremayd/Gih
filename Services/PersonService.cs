@@ -25,6 +25,11 @@ public class PersonService : IPersonService
         return _manager.PersonRepository.GetPerson();
     }
 
+    public IQueryable<Person> GetPersonSortByScore()
+    {
+        return _manager.PersonRepository.GetPersonSortByScore();
+    }
+    
     public async Task<Person> GetPersonByIdAsync(int id)
     {
         var entity = await _manager.PersonRepository.GetPersonByIdAsync(id);
@@ -107,11 +112,20 @@ public class PersonService : IPersonService
             throw new PersonNotFoundException(id);
         }
 
-        // //entity.PersonId = person.PersonId;
-        // entity.PersonName = person.PersonName;
-        // entity.PersonSurname = person.PersonSurname;
-        // entity.PersonPhoneNumber = person.PersonPhoneNumber;
         _mapper.Map(personDto, entity);
+
+        _manager.PersonRepository.UpdatePerson(entity);
+        await _manager.SaveAsync();
+    }
+    
+    public async Task UpdateScoreByIdAsync(int id)
+    {
+        var entity = await _manager.PersonRepository.GetPersonByIdAsync(id);
+        if (entity is null)
+        {
+            throw new PersonNotFoundException(id);
+        }
+        entity.Score = entity.Score + 1;
 
         _manager.PersonRepository.UpdatePerson(entity);
         await _manager.SaveAsync();
